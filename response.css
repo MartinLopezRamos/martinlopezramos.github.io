@@ -62,6 +62,15 @@ body {
 }
 
 @media (max-width: 1024px) {
+    .about_text h2 {
+        text-align: center;
+    }
+    .about_text p {
+        text-align: center;
+    }
+    .about_text {
+        width: 100%;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;
