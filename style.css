@@ -352,7 +352,6 @@ nav li a:hover {
 
 .carousel-wrapper {
   flex: 1 1 400px;
-  width: 30rem;
   overflow: hidden;
   position: relative;
 }

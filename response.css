@@ -135,6 +135,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .carousel-wrapper {
+        width: 22.5rem;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;
@@ -186,6 +189,9 @@ body {
 
 
 @media (max-width: 640px) {
+    .carousel-wrapper {
+        width: 20rem;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;
@@ -237,7 +243,7 @@ body {
 
 @media (max-width: 475px) {
     .carousel-wrapper {
-        width: 20rem;
+        width: 17.5rem;
     }
     .hero_content {
         height: 80vh;
@@ -284,6 +290,9 @@ body {
 }
 
 @media (max-width: 325px) {
+    .carousel-wrapper {
+        width: 15rem;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;
