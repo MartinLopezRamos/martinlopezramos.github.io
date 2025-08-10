@@ -71,6 +71,9 @@ body {
     .about_text {
         width: 100%;
     }
+    .carousel-wrapper {
+        width: 25rem;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;
@@ -233,6 +236,9 @@ body {
 
 
 @media (max-width: 475px) {
+    .carousel-wrapper {
+        width: 20rem;
+    }
     .hero_content {
         height: 80vh;
         width: 90%;

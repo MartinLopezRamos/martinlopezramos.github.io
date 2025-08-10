@@ -230,49 +230,49 @@ nav li a:hover {
 }
 
 .photos {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 .photos_items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 55px;
-    margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  margin: 20px 0 20px 0;
 }
 
 .item {
-    height: 800px;
-    width: 500px;    
-    transition: .3s ease;
-    border: none;
+  height: 800px;
+  width: 500px;    
+  transition: .3s ease;
+  border: none;
 }
 
 .item:hover {
-    box-shadow: 10px 10px 0 black;
-    transform: translateY(-5px) translateX(-5px);
+  box-shadow: 10px 10px 0 black;
+  transform: translateY(-5px) translateX(-5px);
 }
 
 .item1 {
-    background: url('images/photos2.webp');
-    background-size: cover;
-    background-position: center;
+  background: url('images/photos2.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .item2 {
-    background: url('/images/photos1.webp');
-    background-size: cover;
-    background-position: center;
+  background: url('/images/photos1.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .item3 {
-    background: url('/images/photos3.webp');
-    background-size: cover;
-    background-position: center;
+  background: url('/images/photos3.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .about {
