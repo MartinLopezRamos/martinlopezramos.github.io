@@ -857,6 +857,64 @@ footer {
   background-color: #555;
 }
 
+.sub_btn_footer {
+  background-color: #dadada;
+  width: 100vw;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75rem;
+}
+
+.sub_btn_footer p {
+  font-size: 17px;
+}
+
+.sub_btn_footer form {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 0.4rem;
+  column-gap: 0.6rem;
+}
+
+.sub_btn_footer form input {
+  padding: 14px;
+  background-color: #eee;
+  border: none;
+  font-size: 16px;
+  font-family: "Courier Prime", monospace;
+  width: 25rem;
+}
+
+.sub_txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140%;
+}
+
+.sub_txt p {
+  font-size: 14px;
+}
+
+.sub_btn_footer form button {
+  background-color: black;
+  color: white;
+  font-family: "Courier Prime", monospace;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.sub_btn_footer form button:hover {
+  background-color: #222;
+}
+
 @media (max-width: 600px) {
   .about {
     flex-direction: column;

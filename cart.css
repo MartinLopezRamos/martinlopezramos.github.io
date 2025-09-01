@@ -227,6 +227,23 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.info_actions {
+  display: flex;
+  gap: 10px;
+}
+
+.info_ig {
+  background-color: #a5a5a5;
+  padding: 10px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.info_ig a {
+  text-decoration: none;
+  color: black;
+}
 
 .popup {
   display: none; 
