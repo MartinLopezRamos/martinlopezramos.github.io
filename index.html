@@ -185,14 +185,15 @@
     </a>
 
     <div class="sub_btn_footer">
-      <p>Receive updates on product drops - delivered right to your inbox!</p>
+      <div class="info_info">
+        <img id="openPopup" src="images/info.svg" alt="info">
+      </div>
+      <p class="text">Receive updates on product drops delivered right to your inbox!</p>
       <form id="form1" method="POST">
         <!-- {% csrf_token %} -->
         <input type="email" name="email" placeholder="napište email" id="email" required>
         <button type="submit">subscribe</button>
-        <div class="sub_txt">
           <p id="context">Pro zrušení nám zašlete zprávu na náš <a href="https://www.instagram.com/virtues.cloth/">instagram</a></p>
-        </div>
       </form>
     </div>
 

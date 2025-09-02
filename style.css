@@ -858,7 +858,7 @@ footer {
 }
 
 .sub_btn_footer {
-  background-color: #dadada;
+  background-color: #dfdede;
   width: 100vw;
   height: 8rem;
   display: flex;
@@ -867,15 +867,22 @@ footer {
   gap: 75rem;
 }
 
-.sub_btn_footer p {
+.sub_btn_footer a {
+  color: black;
+}
+
+.text {
   font-size: 17px;
 }
 
+.sub_btn_footer form p {
+  font-size: 15px;
+}
+
 .sub_btn_footer form {
-  margin-top: 1rem;
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: auto auto;
-  row-gap: 0.4rem;
   column-gap: 0.6rem;
 }
 
@@ -886,17 +893,6 @@ footer {
   font-size: 16px;
   font-family: "Courier Prime", monospace;
   width: 25rem;
-}
-
-.sub_txt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 140%;
-}
-
-.sub_txt p {
-  font-size: 14px;
 }
 
 .sub_btn_footer form button {
@@ -913,6 +909,14 @@ footer {
 
 .sub_btn_footer form button:hover {
   background-color: #222;
+}
+
+.info_info {
+  background-color: #c9c9c9;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 10px 5px 10px;
+  display: none;
 }
 
 @media (max-width: 600px) {
