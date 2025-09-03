@@ -331,11 +331,37 @@ body {
     .sub_btn_footer form input {
         width: 20rem;
     }
-    .sub_btn_footer form {
-        column-gap: 0;
+}
+
+@media (max-width: 560px) {
+    .sub_btn_footer form input {
+        width: 17rem;
+    }
+    .sub_btn_footer form p {
+        font-size: 15px;
     }
 }
 
+@media (max-width: 510px) {
+    .sub_btn_footer {
+        height: 11rem;
+    }
+    .sub_btn_footer form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .info_info {
+        display: none;
+    }
+    .info2 {
+        display: flex;
+    }
+    .intp {
+        display: none;
+    }
+}
 
 @media (max-width: 475px) {
     .carousel-wrapper {

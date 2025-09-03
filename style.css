@@ -875,15 +875,16 @@ footer {
   font-size: 17px;
 }
 
-.sub_btn_footer form p {
-  font-size: 15px;
-}
-
 .sub_btn_footer form {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 0.6rem;
+}
+
+.sub_btn_footer form p {
+  font-size: 15px;
+  grid-column: 1 / -1;
 }
 
 .sub_btn_footer form input {
@@ -912,6 +913,14 @@ footer {
 }
 
 .info_info {
+  background-color: #c9c9c9;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 10px 5px 10px;
+  display: none;
+}
+
+.info2 {
   background-color: #c9c9c9;
   width: fit-content;
   height: fit-content;
