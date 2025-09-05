@@ -351,15 +351,26 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 0;
     }
     .info_info {
         display: none;
     }
-    .info2 {
-        display: flex;
+    .sub_about {
+        display: block;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
     }
-    .intp {
-        display: none;
+    .sub_btn_footer form button {
+        padding: 12px 106px;
+    }
+    .sub_btn_footer {
+        height: 12rem;
+    }
+    .sub_btn_footer form input {
+        width: 17rem;
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -409,6 +420,13 @@ body {
     .products h2 {
         font-size: 24px;
     }
+    .sub_btn_footer form p {
+        width: 14rem;
+        text-align: center;
+    }
+    .sub_btn_footer {
+        height: 13rem;
+    }
 }
 
 @media (max-width: 325px) {
@@ -449,5 +467,11 @@ body {
 
     .products h2 {
         font-size: 20px;
+    }
+    .sub_btn_footer form input {
+        width: 14rem;
+    }
+    .sub_btn_footer form button {
+        padding: 12px 82px;
     }
 }

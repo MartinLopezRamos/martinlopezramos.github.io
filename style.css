@@ -912,6 +912,10 @@ footer {
   background-color: #222;
 }
 
+.sub_about {
+  display: none;
+}
+
 .info_info {
   background-color: #c9c9c9;
   width: fit-content;
