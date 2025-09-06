@@ -320,15 +320,40 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="index.html" class="continue-shopping">Pokračovat v nákupu</a>
           </div>
         `;
+        if (typeof renderPrehled === "function") {
+          renderPrehled();
+        }
         return;
       }
+      const prices = {
+        "Pásek 1": {
+          s: { cerna: 200, bila: 210, special: 220 },
+          m: { cerna: 220, bila: 230, special: 240 },
+          l: { cerna: 240, bila: 250, special: 260 }
+        },
+        "Pásek 2": {
+          s: { cerna: 250, bila: 260, special: 270 },
+          m: { cerna: 270, bila: 280, special: 290 },
+          l: { cerna: 290, bila: 300, special: 310 }
+        },
+        "Tričko 1": {
+          s: { cerna: 400, bila: 410, special: 420 },
+          m: { cerna: 450, bila: 460, special: 470 },
+          l: { cerna: 500, bila: 510, special: 520 }
+        },
+        "Mikina 1": {
+          s: { cerna: 600, bila: 610, special: 620 },
+          m: { cerna: 650, bila: 660, special: 670 },
+          l: { cerna: 700, bila: 710, special: 720 }
+        }
+      };
 
-      // Calculate total price
+      // Calculate total price and render cart items
       let totalPrice = 0;
+
       const cartItemsHtml = cart.map((item, index) => {
-        // Extract numeric value from price string
-        const priceMatch = item.price ? item.price.match(/\d+/) : null;
-        const itemPrice = priceMatch ? parseInt(priceMatch[0]) : 0;
+        // Získej cenu přímo z objektu prices
+        const itemPrice = prices[item.productName]?.[item.size]?.[item.variant] || 0;
         totalPrice += itemPrice;
 
         return `
@@ -339,13 +364,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${[
                   `Velikost: ${item.size}`,
                   `Varianta: ${item.variant}`,
-                  item.price ? `${item.price} Kč` : null
+                  itemPrice ? `${itemPrice} Kč` : null
                 ].filter(Boolean).join(' | ')}
               </div>
             </div>
             <div class="item-actions">
               <button class="remove-item" data-index="${index}">
-                 <img src="/images/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
+                <img src="/images/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
               </button>
             </div>
           </div>
@@ -373,6 +398,10 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
       `;
+
+      if (typeof renderPrehled === "function") {
+        renderPrehled();
+      }
 
       // Add event listeners for remove buttons
       document.querySelectorAll(".remove-item").forEach(btn => {
@@ -487,6 +516,72 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300);
       }, 2000);
     }
+    const prehledContainer = document.querySelector('.prehled');
+
+    if (prehledContainer) {
+      function renderPrehled() {
+        prehledContainer.innerHTML = "";
+
+        if (cart.length === 0) {
+          prehledContainer.innerHTML = `
+            <div class="prehled-empty">
+              <p>Košík je prázdný</p>
+            </div>
+          `;
+          return;
+        }
+
+        const prices = {
+          "Pásek 1": {
+            s: { cerna: 200, bila: 210, special: 220 },
+            m: { cerna: 220, bila: 230, special: 240 },
+            l: { cerna: 240, bila: 250, special: 260 }
+          },
+          "Pásek 2": {
+            s: { cerna: 250, bila: 260, special: 270 },
+            m: { cerna: 270, bila: 280, special: 290 },
+            l: { cerna: 290, bila: 300, special: 310 }
+          },
+          "Tričko 1": {
+            s: { cerna: 400, bila: 410, special: 420 },
+            m: { cerna: 450, bila: 460, special: 470 },
+            l: { cerna: 500, bila: 510, special: 520 }
+          },
+          "Mikina 1": {
+            s: { cerna: 600, bila: 610, special: 620 },
+            m: { cerna: 650, bila: 660, special: 670 },
+            l: { cerna: 700, bila: 710, special: 720 }
+          }
+        };
+
+        let totalPrice = 0;
+        let prehledHtml = `<h4><u>Přehled</u></h4><ul>`;
+
+        cart.forEach(item => {
+          const itemPrice = prices[item.productName]?.[item.size]?.[item.variant] || 0;
+          totalPrice += itemPrice;
+
+          prehledHtml += `
+            <li>
+              1x ${item.productName} (${item.size}, ${item.variant}) - ${itemPrice} Kč
+            </li>
+          `;
+        });
+
+        prehledHtml += `</ul>`;
+
+        prehledHtml += `
+          <div class="prehled-total">
+            <strong>Celkem k úhradě: ${totalPrice} Kč</strong>
+          </div>
+        `;
+
+        prehledContainer.innerHTML = prehledHtml;
+      }
+
+      // Aby se přehled obnovoval společně s košíkem
+      renderPrehled();
+    }
 
     // Initial cart render
     renderCart();
@@ -533,4 +628,3 @@ window.onclick = (e) => {
     popup.style.display = "none";
   }
 };
-
