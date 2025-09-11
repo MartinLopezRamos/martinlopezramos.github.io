@@ -47,9 +47,6 @@ body {
     .text {
         display: none;
     }
-    .info_info {
-        display: block;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -165,7 +162,7 @@ body {
     }
 
         .about {
-        flex-direction: column;
+    flex-direction: column;
     }
 
     .about_photo {
@@ -352,9 +349,6 @@ body {
         align-items: center;
         flex-direction: column;
         margin-top: 0;
-    }
-    .info_infos {
-        display: none;
     }
     .sub_about {
         display: block;
