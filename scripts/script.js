@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const checkbox = document.querySelector(".hamburger input[type='checkbox']");
+    const navLinks = document.querySelectorAll(".links a");
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        checkbox.checked = false; // odškrtnout po kliknutí
+      });
+    });
+  });
+
 // =========================
 // NAV SCROLL EFFECT
 // =========================
@@ -21,7 +32,7 @@
 (function () {
   const el = document.getElementById("typewriter");
   if (!el) return;
-  
+
   const text = "Pro ty, kdo jdou za svými cíli";
   let index = 0;
   let deleting = false;
@@ -30,23 +41,27 @@
 
   function animate() {
     if (!deleting) {
-      el.textContent = text.slice(0, index);
+      el.textContent = text.slice(0, index + 1);
       index++;
-      if (index > text.length) {
+      if (index === text.length) {
         deleting = true;
         setTimeout(animate, pause);
         return;
       }
     } else {
-      el.textContent = text.slice(0, index);
+      el.textContent = text.slice(0, index - 1);
       index--;
-      if (index < 0) deleting = false;
+      if (index === 0) {
+        deleting = false;
+      }
     }
     setTimeout(animate, speed);
   }
 
   animate();
 })();
+
+
 
 // =========================
 // CAROUSEL
