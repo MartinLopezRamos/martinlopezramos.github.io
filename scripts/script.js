@@ -176,12 +176,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartContainer = document.getElementById("cartContainer");
   const clearBtn = document.getElementById("clearCartBtn");
   const footer = document.querySelector("footer");
+  const cart_icon = document.querySelector(".cartik")
 
   // Update cart counter display
   function updateCartCounter() {
     if (cartCounter) {
       const itemCount = cart.length;
       cartCounter.textContent = `${itemCount} ${itemCount === 1 ? 'položka' : 'položek'}`;
+    }
+  }
+
+  function animateCartIcon() {
+    if (cart_icon) {
+      cart_icon.classList.remove("houpat");
+      void cart_icon.offsetWidth;
+      cart_icon.classList.add("houpat")
+
+      cart_icon.addEventListener("animationend", function handler() {
+        cart_icon.classList.remove("houpat");
+        cart_icon.removeEventListener("animationend", handler);
+      });
     }
   }
 
@@ -236,12 +250,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerTop = footer.offsetTop;
     const scrollBottom = scrollY + vh;
 
-    if (scrollY > vh * 0.5 && scrollBottom < footerTop - 100) {
+    if (scrollY > vh * 0.5 && scrollBottom < footerTop - 40) {
       cartElement.style.display = "flex";
       cartElement.classList.add('visible');
     } else {
       cartElement.style.display = "none";
       cartElement.classList.remove('visible');
+
+      if (cart_icon) {
+        cart_icon.classList.remove("houpat");
+      }
     }
   }
 
@@ -312,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
     cart.push(product);
     saveCart();
     updateCartCounter();
+    animateCartIcon(); 
 
     // Show flying notification
     showFlyingNotification(productName, e.target);
