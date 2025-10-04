@@ -136,7 +136,7 @@ nav li a:hover {
 }
 
 .hero_content {
-    background: url("/images/hero.JPG");
+    background: url("https://martinlopezramos.github.io/hero.JPG");
     height: 85vh;
     width: 95%;
     margin-top: 70px;
@@ -258,19 +258,19 @@ nav li a:hover {
 }
 
 .item1 {
-  background: url('images/photos2.webp');
+  background: url('https://martinlopezramos.github.io/photos2.webp');
   background-size: cover;
   background-position: center;
 }
 
 .item2 {
-  background: url('/images/photos1.webp');
+  background: url('https://martinlopezramos.github.io/photos1.webp');
   background-size: cover;
   background-position: center;
 }
 
 .item3 {
-  background: url('/images/photos3.webp');
+  background: url('https://martinlopezramos.github.io/photos3.webp');
   background-size: cover;
   background-position: center;
 }
@@ -495,7 +495,7 @@ nav li a:hover {
   background-position: center;
 }
 
-.acc_photo1 { background-color: #3498db; }
+.acc_photo1 { background: url("https://martinlopezramos.github.io/about2.webp"); background-repeat: no-repeat; background-size: contain;}
 .acc_photo2 { background-color: #2ecc71; }
 .acc_photo3 { background-color: #e74c3c; }
 .acc_photo4 { background-color: #9b59b6; }
