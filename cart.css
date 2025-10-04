@@ -297,6 +297,14 @@ nav li a:hover {
   background-color: #555;
 }
 
+.clear-cart-btn {
+  transition: background-color 0.3s ease;
+}
+
+.clear-cart-btn:hover {
+  background-color: #222;
+}
+
 @media (max-width: 1020px) {
   .content {
     margin: 0;
@@ -329,5 +337,14 @@ nav li a:hover {
   }
   .info_info {
     padding: 6px 142px 1px 142px;
+  }
+}
+
+@media (max-width: 380px) {
+  .info_info {
+    padding: 6px 110px 1px 110px;
+  }
+  .info_ig {
+    width: 14rem;
   }
 }

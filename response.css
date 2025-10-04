@@ -161,8 +161,8 @@ body {
         font-size: 40px;
     }
 
-        .about {
-    flex-direction: column;
+    .about {
+        flex-direction: column;
     }
 
     .about_photo {
@@ -172,12 +172,6 @@ body {
 }
 
 @media (max-width: 840px) {
-    .carousel-wrapper {
-        width: 20rem;
-    }
-    .accessories_others {
-        margin-left: 200px;
-    }
     .hero_content {
         height: 80vh;
         width: 90%;
@@ -222,59 +216,18 @@ body {
         margin: 0;
     }
 
+    .accessories_others p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
     .products h2 {
         font-size: 32px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero_content {
-        height: 80vh;
-        width: 90%;
-        margin-top: 80px;
-        align-items: center;
-        justify-content: center;
     }
     
-    .hero_content h1 {
-        font-size: 50px;
-        align-self: center;
-        background-color: #0000007e;
-        padding: 10px;
-        margin: 0;
-    }
-
-    .hero_content a {
-        font-size: 30px;
-        align-self: center;
-        background-color: #0000007e;
-        padding: 10px;
-        margin: 0;
-    }
-
-    #typewriter-container {
-        font-size: 30px;
-    }
-
-    .photos_items {
-        gap: 20px;
-        align-self: center;
-        flex-direction: column;
-    }
-
-    .item {
-        height: 400px;
-        width: 300px;
-    }
-
-    .accessories_others {
-        align-items: center;
-        margin: 0;
-    }
-
-    .products h2 {
-        font-size: 32px;
-    }
 }
 
 
