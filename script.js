@@ -1,17 +1,35 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("form1")
+    const p = document.getElementById("context")
+    form.addEventListener("submit", function(e) {
+        e.preventDefault()
+
+        const email = document.getElementById("email").value 
+        fetch('/odber-ajax/', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+                "X-CSRFToken": document.querySelector("[name=csrfmiddlewaretoken]").value,
+                "X-Requested-With": "XMLHttpRequest"
+            },
+            body: "email=" + encodeURIComponent(email)
+        }).then(odpoved => odpoved.json()).then(idk => {
+            p.textContent = idk.context
+        })
+    })
+})
+
 document.addEventListener("DOMContentLoaded", () => {
     const checkbox = document.querySelector(".hamburger input[type='checkbox']");
     const navLinks = document.querySelectorAll(".links a");
 
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
-        checkbox.checked = false; // odškrtnout po kliknutí
+        checkbox.checked = false;
       });
     });
   });
 
-// =========================
-// NAV SCROLL EFFECT
-// =========================
 (function () {
   const nav = document.querySelector("nav");
   if (!nav) return;
@@ -26,22 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 })();
 
-// =========================
-// TYPEWRITER EFFECT
-// =========================
 (function () {
   const el = document.getElementById("typewriter");
   if (!el) return;
 
-  const text = "Pro ty, kdo jdou za svými cíli";
+  const text = "For those, who follow their targets";
   let index = 0;
   let deleting = false;
   const speed = 100;
   const pause = 1500;
+  const pause2 = 1000
+
+  el.textContent = "\u00A0";
 
   function animate() {
     if (!deleting) {
-      el.textContent = text.slice(0, index + 1);
+      el.textContent = text.slice(0, index + 1) || "\u00A0";
       index++;
       if (index === text.length) {
         deleting = true;
@@ -49,10 +67,12 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
     } else {
-      el.textContent = text.slice(0, index - 1);
+      el.textContent = text.slice(0, index - 1) || "\u00A0";
       index--;
       if (index === 0) {
         deleting = false;
+        setTimeout(animate, pause2);
+        return;
       }
     }
     setTimeout(animate, speed);
@@ -61,11 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
   animate();
 })();
 
-
-
-// =========================
-// CAROUSEL
-// =========================
 function createCarousel({carouselSelector, photoSelector, nextBtnSelector, prevBtnSelector, dotsContainerSelector}) {
   const carousel = document.querySelector(carouselSelector);
   const photos = document.querySelectorAll(photoSelector);
@@ -115,9 +130,6 @@ function createCarousel({carouselSelector, photoSelector, nextBtnSelector, prevB
   }, 6000);
 }
 
-// -------------------------
-// GENERIC CAROUSEL FOR WRAPPER ELEMENTS
-// -------------------------
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll(".carousel-wrapper").forEach(wrapper => {
     const carousel = wrapper.querySelector("div");
@@ -163,14 +175,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// =========================
-// KOŠÍK (CART) FUNCTIONALITY
-// =========================
 document.addEventListener('DOMContentLoaded', () => {
-  // Initialize cart from localStorage
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   
-  // Get DOM elements
   const cartCounter = document.getElementById("cartCounter");
   const cartElement = document.getElementById("cart");
   const cartContainer = document.getElementById("cartContainer");
@@ -178,7 +185,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const footer = document.querySelector("footer");
   const cart_icon = document.querySelector(".cartik")
 
-  // Update cart counter display
   function updateCartCounter() {
     if (cartCounter) {
       const itemCount = cart.length;
@@ -199,12 +205,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Save cart to localStorage
   function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 
-  // Show flying notification when item is added
   function showFlyingNotification(productName, buttonElement) {
     const notification = document.createElement("div");
     notification.className = "fly_to_cart";
@@ -223,12 +227,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     document.body.appendChild(notification);
     
-    // Get button position
     const rect = buttonElement.getBoundingClientRect();
     notification.style.left = rect.left + "px";
     notification.style.top = rect.top + "px";
-    
-    // Animate to cart position (top right)
+
     setTimeout(() => {
       notification.style.transform = `translate(${window.innerWidth - rect.left - 200}px, -${rect.top + 50}px)`;
       notification.style.opacity = "0";
@@ -241,7 +243,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1000);
   }
 
-  // Handle cart visibility on scroll (for index page)
   function handleCartVisibility() {
     if (!cartElement || !footer) return;
     
@@ -263,13 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Add event listener for cart visibility
   window.addEventListener("scroll", handleCartVisibility);
   
-  // Initial cart counter update
   updateCartCounter();
 
-  // Handle add to cart buttons (multiple selectors for compatibility)
   const addToCartSelectors = [
     '.accessories_others', 
     '.add_to_cart', 
@@ -287,7 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else if (isButton) {
         element.addEventListener("click", handleAddToCart);
       } else {
-        // For other elements, look for submit buttons inside
         const submitBtn = element.querySelector('button[type="submit"], input[type="submit"], .add_to_cart');
         if (submitBtn) {
           submitBtn.addEventListener("click", handleAddToCart);
@@ -305,42 +302,33 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Get product information from form
-    const productNameSelect = form.querySelector('select[name="product_name"], select:first-of-type');
-    const sizeSelect = form.querySelector('select[name="size"], select:nth-of-type(2)');
-    const variantSelect = form.querySelector('select[name="variant"], select:nth-of-type(3)');
+    const productNameSelect = form.querySelector('select:first-of-type');
+    const sizeSelect = form.querySelector('select:nth-of-type(2)');
     const priceElement = form.querySelector('h4, .price, [data-price]');
 
-    const productName = productNameSelect.value;
-    const size = sizeSelect.value;
-    const variant = variantSelect.value;
+    
+    const productName = productNameSelect?.value || '';
+    const size = sizeSelect?.value || '';
     const price = priceElement ? priceElement.textContent.replace(/[^\d,.-]/g, '').trim() : '';
 
-    // Create product object
     const product = {
-      id: Date.now() + Math.random(), // Simple unique ID
-      productName: productName,
-      size: size,
-      variant: variant,
-      price: price,
+      id: Date.now() + Math.random(),
+      productName,
+      size,
+      price: priceElement ? priceElement.textContent.replace(/[^\d,.-]/g, '').trim() : '',
       dateAdded: new Date().toISOString()
     };
 
-    // Add to cart
     cart.push(product);
     saveCart();
     updateCartCounter();
     animateCartIcon(); 
 
-    // Show flying notification
     showFlyingNotification(productName, e.target);
 
     console.log('Product added to cart:', product);
   }
 
-  // -------------------------
-  // CART.HTML SPECIFIC LOGIC
-  // -------------------------
   const kosikItems = document.querySelector('.kosik_items');
   
   if (kosikItems) {
@@ -350,8 +338,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (cart.length === 0) {
         kosikItems.innerHTML = `
           <div class="empty-cart">
-            <p>Váš košík je prázdný</p>
-            <a href="index.html" class="continue-shopping">Pokračovat v nákupu</a>
+            <p>Your cart is empty</p>
+            <a href="/" class="continue-shopping">Continue shopping</a>
           </div>
         `;
         if (typeof renderPrehled === "function") {
@@ -360,34 +348,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       const prices = {
-        "Pásek 1": {
-          s: { cerna: 200, bila: 210, special: 220 },
-          m: { cerna: 220, bila: 230, special: 240 },
-          l: { cerna: 240, bila: 250, special: 260 }
+        "Belt": {
+          S: 799,
+          M: 799,
+          L: 799
         },
-        "Pásek 2": {
-          s: { cerna: 250, bila: 260, special: 270 },
-          m: { cerna: 270, bila: 280, special: 290 },
-          l: { cerna: 290, bila: 300, special: 310 }
+        "Summer’24 tee": {
+          S: 599,
+          M: 599,
+          L: 599
         },
-        "Tričko 1": {
-          s: { cerna: 400, bila: 410, special: 420 },
-          m: { cerna: 450, bila: 460, special: 470 },
-          l: { cerna: 500, bila: 510, special: 520 }
+        "Greyhound Longsleeve": {
+          S: 949,
+          M: 949,
+          L: 949
         },
-        "Mikina 1": {
-          s: { cerna: 600, bila: 610, special: 620 },
-          m: { cerna: 650, bila: 660, special: 670 },
-          l: { cerna: 700, bila: 710, special: 720 }
+        "Crewneck": {
+          S: 1499,
+          M: 1499,
+          L: 1499
         }
       };
 
-      // Calculate total price and render cart items
       let totalPrice = 0;
 
       const cartItemsHtml = cart.map((item, index) => {
-        // Získej cenu přímo z objektu prices
-        const itemPrice = prices[item.productName]?.[item.size]?.[item.variant] || 0;
+        const itemPrice = prices[item.productName]?.[item.size] || 0;
         totalPrice += itemPrice;
 
         return `
@@ -396,22 +382,20 @@ document.addEventListener('DOMContentLoaded', () => {
               <h3>${item.productName}</h3>
               <div class="item-details">
                 ${[
-                  `Velikost: ${item.size}`,
-                  `Varianta: ${item.variant}`,
-                  itemPrice ? `${itemPrice} Kč` : null
+                  `Size: ${item.size}`,
+                  itemPrice ? `${itemPrice} Czk` : null
                 ].filter(Boolean).join(' | ')}
               </div>
             </div>
             <div class="item-actions">
               <button class="remove-item" data-index="${index}">
-                <img src="/images/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
+                <img src="/static/images/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
               </button>
             </div>
           </div>
         `;
       }).join('');
 
-      // Create cart summary
       kosikItems.innerHTML = `
         <div class="cart-content">
           <div class="cart-items-list">
@@ -421,8 +405,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="cart-summary">
             ${totalPrice > 0 ? `
               <div class="summary-row total">
-                <span>Celková cena:</span>
-                <span>${totalPrice} Kč</span>
+                <span>Celková cena: </span>
+                <span>&nbsp;${totalPrice} Czk</span>
               </div>
             ` : ''}
             
@@ -437,7 +421,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderPrehled();
       }
 
-      // Add event listeners for remove buttons
       document.querySelectorAll(".remove-item").forEach(btn => {
         btn.addEventListener("click", () => {
           const index = parseInt(btn.dataset.index);
@@ -448,12 +431,10 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCartCounter();
             renderCart();
             
-            // Show notification
             showRemoveNotification(removedItem.productName);
         });
       });
 
-      // Clear cart button
       const clearCartBtn = document.querySelector('.clear-cart-btn');
       if (clearCartBtn) {
         clearCartBtn.addEventListener("click", () => {
@@ -465,18 +446,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
 
-      // Checkout button (placeholder)
       const checkoutBtn = document.querySelector('.checkout-btn');
       if (checkoutBtn) {
         checkoutBtn.addEventListener("click", () => {
           alert('Funkce objednávky bude brzy dostupná!');
-          // Here you would typically redirect to checkout page
-          // window.location.href = 'checkout.html';
         });
       }
     }
 
-    // Show notification when item is removed
     function showRemoveNotification(productName) {
       const notification = document.createElement("div");
       notification.className = "remove_notification";
@@ -498,12 +475,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       document.body.appendChild(notification);
       
-      // Animate in
       setTimeout(() => {
         notification.style.transform = "translateX(0)";
       }, 100);
       
-      // Animate out and remove
       setTimeout(() => {
         notification.style.transform = "translateX(100%)";
         setTimeout(() => {
@@ -535,12 +510,10 @@ document.addEventListener('DOMContentLoaded', () => {
       
       document.body.appendChild(notification);
       
-      // Animate in
       setTimeout(() => {
         notification.style.transform = "translateX(0)";
       }, 100);
       
-      // Animate out and remove
       setTimeout(() => {
         notification.style.transform = "translateX(100%)";
         setTimeout(() => {
@@ -559,32 +532,32 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cart.length === 0) {
           prehledContainer.innerHTML = `
             <div class="prehled-empty">
-              <p>Košík je prázdný</p>
+              <p>Your cart is empty</p>
             </div>
           `;
           return;
         }
 
         const prices = {
-          "Pásek 1": {
-            s: { cerna: 200, bila: 210, special: 220 },
-            m: { cerna: 220, bila: 230, special: 240 },
-            l: { cerna: 240, bila: 250, special: 260 }
+          "Belt": {
+            S: 799,
+            M: 799,
+            L: 799
           },
-          "Pásek 2": {
-            s: { cerna: 250, bila: 260, special: 270 },
-            m: { cerna: 270, bila: 280, special: 290 },
-            l: { cerna: 290, bila: 300, special: 310 }
+          "Summer’24 tee": {
+            S: 599,
+            M: 599,
+            L: 599
           },
-          "Tričko 1": {
-            s: { cerna: 400, bila: 410, special: 420 },
-            m: { cerna: 450, bila: 460, special: 470 },
-            l: { cerna: 500, bila: 510, special: 520 }
+          "Greyhound Longsleeve": {
+            S: 949,
+            M: 949,
+            L: 949
           },
-          "Mikina 1": {
-            s: { cerna: 600, bila: 610, special: 620 },
-            m: { cerna: 650, bila: 660, special: 670 },
-            l: { cerna: 700, bila: 710, special: 720 }
+          "Crewneck": {
+            S: 1499,
+            M: 1499,
+            L: 1499
           }
         };
 
@@ -592,12 +565,12 @@ document.addEventListener('DOMContentLoaded', () => {
         let prehledHtml = `<h4><u>Přehled</u></h4><ul>`;
 
         cart.forEach(item => {
-          const itemPrice = prices[item.productName]?.[item.size]?.[item.variant] || 0;
+          const itemPrice = prices[item.productName]?.[item.size] || 0;
           totalPrice += itemPrice;
 
           prehledHtml += `
             <li>
-              1x ${item.productName} (${item.size}, ${item.variant}) - ${itemPrice} Kč
+              1x ${item.productName} (${item.size}) - ${itemPrice} Czk
             </li>
           `;
         });
@@ -606,22 +579,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         prehledHtml += `
           <div class="prehled-total">
-            <strong>Celkem k úhradě: ${totalPrice} Kč</strong>
+            <strong>Celkem k úhradě: ${totalPrice} Czk</strong>
           </div>
         `;
 
         prehledContainer.innerHTML = prehledHtml;
       }
 
-      // Aby se přehled obnovoval společně s košíkem
       renderPrehled();
     }
 
-    // Initial cart render
     renderCart();
   }
 
-  // Make cart globally accessible for debugging
   window.cartDebug = {
     getCart: () => cart,
     clearCart: () => {
@@ -636,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
         productName: 'Test Product',
         size: 'M',
         variant: 'Red',
-        price: '100 Kč'
+        price: '100 Czk'
       });
       saveCart();
       updateCartCounter();
