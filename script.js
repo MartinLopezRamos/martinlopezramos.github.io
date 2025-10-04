@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="item-actions">
               <button class="remove-item" data-index="${index}">
-                <img src="/static/images/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
+                <img src="https://martinlopezramos.github.io/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
               </button>
             </div>
           </div>
