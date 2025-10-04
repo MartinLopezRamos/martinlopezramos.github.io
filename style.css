@@ -372,11 +372,6 @@ nav li a:hover {
   background-position: center;
 }
 
-.photo1 { background-color: #3498db; }
-.photo2 { background-color: #2ecc71; }
-.photo3 { background-color: #e74c3c; }
-.photo4 { background-color: #9b59b6; }
-
 .carousel-btn {
   position: absolute;
   top: 50%;
