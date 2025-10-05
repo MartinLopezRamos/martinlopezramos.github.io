@@ -450,6 +450,7 @@ nav li a:hover {
   font-size: 14px;
   font-family: "Courier Prime", monospace;
   max-width: 400px;
+  min-width: 100px;
 }
 
 .accessories_others p {
