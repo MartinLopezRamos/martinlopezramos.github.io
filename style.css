@@ -970,9 +970,9 @@ footer {
     text-align: center;
   }
 
-  .accessories_others select {
+  /* .accessories_others select {
     width: 90%;
-  }
+  } */
 
   .add_to_cart {
     width: 100%;
