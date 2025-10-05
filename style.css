@@ -454,11 +454,10 @@ nav li a:hover {
 
 .accessories_others p {
   font-size: 14px;
-  max-width: 300px;
   line-height: 1.5;
-  margin: 0;
-  margin: 10px 0 10px 5px;
-  text-align: center;
+  margin: 10px 0;
+  text-align: left;
+  width: 100%;
 }
 
 .add_to_cart {
