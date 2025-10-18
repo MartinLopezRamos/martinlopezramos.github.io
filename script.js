@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateCartCounter() {
     if (cartCounter) {
       const itemCount = cart.length;
-      cartCounter.textContent = `${itemCount} ${itemCount === 1 ? 'položka' : 'položek'}`;
+      cartCounter.textContent = `${itemCount} ${itemCount === 1 ? 'item' : 'items'}`;
     }
   }
 
@@ -389,7 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <div class="item-actions">
               <button class="remove-item" data-index="${index}">
-                <img src="https://martinlopezramos.github.io/Trash 2.png" alt="Odstranit" title="Odstranit z košíku" />
+                <img src="https://martinlopezramos.github.io/Trash 2.png" alt="remove" />
               </button>
             </div>
           </div>
@@ -405,13 +405,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="cart-summary">
             ${totalPrice > 0 ? `
               <div class="summary-row total">
-                <span>Celková cena: </span>
+                <span>Total price: </span>
                 <span>&nbsp;${totalPrice} Czk</span>
               </div>
             ` : ''}
             
             <div class="cart-actions">
-              <button class="clear-cart-btn">Vyprázdnit košík</button>
+              <button class="clear-cart-btn">Empty cart</button>
             </div>
           </div>
         </div>
@@ -449,7 +449,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const checkoutBtn = document.querySelector('.checkout-btn');
       if (checkoutBtn) {
         checkoutBtn.addEventListener("click", () => {
-          alert('Funkce objednávky bude brzy dostupná!');
+          alert('The ordering feature will be available soon!');
         });
       }
     }
@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function showRemoveNotification(productName) {
       const notification = document.createElement("div");
       notification.className = "remove_notification";
-      notification.textContent = `${productName} byl odstraněn z košíku`;
+      notification.textContent = `${productName} was removed from your cart`;
       notification.style.cssText = `
         position: fixed;
         top: 20px;
@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function clear_everything() {
       const notification = document.createElement("div");
       notification.className = "remove_notification";
-      notification.textContent = "Košík byl vyprázdněn";
+      notification.textContent = "The cart has been emptied";
       notification.style.cssText = `
         position: fixed;
         top: 20px;
@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         let totalPrice = 0;
-        let prehledHtml = `<h4><u>Přehled</u></h4><ul>`;
+        let prehledHtml = `<h4><u>Overview</u></h4><ul>`;
 
         cart.forEach(item => {
           const itemPrice = prices[item.productName]?.[item.size] || 0;
@@ -579,7 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         prehledHtml += `
           <div class="prehled-total">
-            <strong>Celkem k úhradě: ${totalPrice} Czk</strong>
+            <strong>Total amount due: ${totalPrice} Czk</strong>
           </div>
         `;
 
