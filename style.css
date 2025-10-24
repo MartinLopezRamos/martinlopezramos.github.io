@@ -155,7 +155,7 @@ nav li a:hover {
     position: relative;
 }
 
-.hero_content h1 {
+.hero_content p {
     color: white;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.148);
     font-size: 64px;
@@ -298,7 +298,7 @@ nav li a:hover {
   position: relative;
 }
 
-.about_text h2 {
+.about_text h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -689,7 +689,7 @@ footer {
   margin-left: 50px;
 }
 
-.footer_left h1 {
+.footer_left h2 {
   font-size: 32px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;

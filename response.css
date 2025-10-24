@@ -108,7 +108,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .about_text h2 {
+    .about_text h1 {
         text-align: center;
     }
     .about_text p {
@@ -125,7 +125,7 @@ body {
         justify-content: center;
     }
 
-    .hero_content h1 {
+    .hero_content p {
         font-size: 60px;
         align-self: center;
         background-color: #0000007e;
@@ -180,7 +180,7 @@ body {
         justify-content: center;
     }
     
-    .hero_content h1 {
+    .hero_content p {
         font-size: 50px;
         align-self: center;
         background-color: #0000007e;
@@ -240,7 +240,7 @@ body {
         justify-content: center;
     }
 
-    .hero_content h1 {
+    .hero_content p {
         font-size: 45px;
         align-self: center;
         background-color: #0000007e;
@@ -333,7 +333,7 @@ body {
         justify-content: center;
     }
 
-    .hero_content h1 {
+    .hero_content P {
         font-size: 40px;
         align-self: center;
         background-color: #0000007e;
@@ -388,7 +388,7 @@ body {
         justify-content: center;
     }
 
-    .hero_content h1 {
+    .hero_content p {
         font-size: 30px;
         align-self: center;
         background-color: #0000007e;
