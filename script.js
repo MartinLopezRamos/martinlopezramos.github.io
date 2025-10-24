@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const el = document.getElementById("typewriter");
   if (!el) return;
 
-  const text = "For those, who follow their targets";
+  const text = "For streetwear, style, and confidence";
   let index = 0;
   let deleting = false;
   const speed = 100;
