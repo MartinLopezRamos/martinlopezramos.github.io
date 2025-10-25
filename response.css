@@ -379,6 +379,9 @@ body {
     .about_photo img {
         width: 120%;
     }
+    .add_to_cart {
+        width: 80%;
+    }
 }
 
 @media (max-width: 325px) {
@@ -425,5 +428,8 @@ body {
     }
     .sub_btn_footer form button {
         padding: 12px 82px;
+    }
+    .add_to_cart {
+        width: 100%;
     }
 }
