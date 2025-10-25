@@ -978,6 +978,9 @@ footer {
     width: 100%;
     text-align: center;
   }
+  .carousel-wrapper {
+    width: 20rem;
+  }
 }
 
 @keyframes houpani {

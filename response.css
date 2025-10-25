@@ -374,6 +374,9 @@ body {
     .sub_btn_footer {
         height: 13rem;
     }
+    .about_photo img {
+        width: 120%;
+    }
 }
 
 @media (max-width: 325px) {
