@@ -227,9 +227,6 @@ body {
     .products h2 {
         font-size: 32px;
     }
-    .product_card {
-        display: flex;
-    }
 }
 
 
