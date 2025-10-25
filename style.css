@@ -981,6 +981,18 @@ footer {
   }
 }
 
+@media (max-width: 475px) {
+  .add_to_cart {
+    width: 80%;
+  }
+}
+
+@media (max-width: 325px) {
+  .add_to_cart {
+    width: 100%;
+  }
+}
+
 @keyframes houpani {
   0%   { 
     transform: rotate(0deg);
