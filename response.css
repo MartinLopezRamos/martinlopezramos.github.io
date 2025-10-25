@@ -322,6 +322,9 @@ body {
 }
 
 @media (max-width: 475px) {
+    .product_card {
+        display: flex;
+    }
     .carousel-wrapper {
         width: 17.5rem;
     }
