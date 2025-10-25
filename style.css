@@ -490,9 +490,8 @@ nav li a:hover {
 }
 
 .acc_photo1 { background: url("https://martinlopezramos.github.io/about2.webp"); background-repeat: no-repeat; background-size: contain;}
-.acc_photo2 { background-color: #2ecc71; }
+.acc_photo2 { background: url("https://martinlopezramos.github.io/druhy.webp"); background-repeat: no-repeat; background-size: contain;}
 .acc_photo3 { background-color: #e74c3c; }
-.acc_photo4 { background-color: #9b59b6; }
 
 .acc-carousel-btn {
   position: absolute;
@@ -556,7 +555,6 @@ nav li a:hover {
 .cloth_photo1 { background-color: #3498db; }
 .cloth_photo2 { background-color: #2ecc71; }
 .cloth_photo3 { background-color: #e74c3c; }
-.cloth_photo4 { background-color: #9b59b6; }
 
 .cloth-carousel-btn {
   position: absolute;
