@@ -289,6 +289,7 @@ body {
     .sub_btn_footer form p {
         font-size: 15px;
     }
+    .acc_photo1 { background: url("https://martinlopezramos.github.io/about2NE.webp"); background-repeat: no-repeat; background-size: contain;}
 }
 
 @media (max-width: 510px) {
