@@ -491,7 +491,7 @@ nav li a:hover {
 
 .acc_photo1 { background: url("https://martinlopezramos.github.io/about2.webp"); background-repeat: no-repeat; background-size: contain;}
 .acc_photo2 { background: url("https://martinlopezramos.github.io/druhy.webp"); background-repeat: no-repeat; background-size: contain;}
-.acc_photo3 { background-color: #e74c3c; }
+.acc_photo3 { background: url("https://martinlopezramos.github.io/treti.webp"); background-repeat: no-repeat; background-size: contain;}
 
 .acc-carousel-btn {
   position: absolute;
