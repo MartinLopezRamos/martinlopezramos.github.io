@@ -327,9 +327,6 @@ nav li a:hover {
     text-align: center;
     margin-top: 4rem;
   }
-}
-
-@media (max-width: 470px) {
   .info_actions {
     display: flex;
     flex-direction: column;
