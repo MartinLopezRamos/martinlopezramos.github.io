@@ -430,7 +430,6 @@ nav li a:hover {
   font-family: "Rubik", sans-serif;
   font-size: 36px;
   font-weight: 500;
-  text-transform: lowercase;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
   margin: 0;
@@ -555,6 +554,14 @@ nav li a:hover {
 .cloth_photo1 { background-color: #3498db; }
 .cloth_photo2 { background-color: #2ecc71; }
 .cloth_photo3 { background-color: #e74c3c; }
+
+.cloth_photo11 { background-color: #3498db; }
+.cloth_photo22 { background-color: #2ecc71; }
+.cloth_photo33 { background-color: #e74c3c; }
+
+.cloth_photo111 { background-color: #3498db; }
+.cloth_photo222 { background-color: #2ecc71; }
+.cloth_photo333 { background-color: #e74c3c; }
 
 .cloth-carousel-btn {
   position: absolute;
