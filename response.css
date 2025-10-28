@@ -227,6 +227,14 @@ body {
     .products h2 {
         font-size: 32px;
     }
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/short2-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/short32-1.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/long22-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/long32-1.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/mikina2-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/mikina22-1.webp"); background-repeat: no-repeat; background-size: contain;}
 }
 
 
