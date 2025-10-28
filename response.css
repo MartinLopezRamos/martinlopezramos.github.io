@@ -289,7 +289,9 @@ body {
     .sub_btn_footer form p {
         font-size: 15px;
     }
-    .acc_photo1 { background: url("https://martinlopezramos.github.io/about2NE.webp"); background-repeat: no-repeat; background-size: contain;}
+    .acc_photo2 { background: url("https://martinlopezramos.github.io/about2NE.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/gay2.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/gay7.webp"); background-repeat: no-repeat; background-size: contain;}
 }
 
 @media (max-width: 510px) {
