@@ -408,7 +408,7 @@ body {
         width: 120%;
     }
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/lepsi.jpg"); background-repeat: no-repeat; background-size: contain;}
-    .cloth_photo1 { background: url("https://martinlopezramos.github.io/lepsi2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/lepsi2.jpg"); background-repeat: no-repeat; background-size: contain;}
 
     .cloth_photo22 { background: url("https://martinlopezramos.github.io/lepsi3.jpeg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo33 { background: url("https://martinlopezramos.github.io/lepsi4.jpeg"); background-repeat: no-repeat; background-size: contain;}
@@ -417,6 +417,16 @@ body {
     .cloth_photo222 { background: url("https://martinlopezramos.github.io/lepsi6.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo333 { background: url("https://martinlopezramos.github.io/lepsi7.jpg"); background-repeat: no-repeat; background-size: contain;}
 }
+
+/* @media (max-width: 420px) {
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/lepsi.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/lepsi2.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/lepsi3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/lepsi4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/lepsi5.jpg"); background-repeat: no-repeat; background-size: contain;}
+} */
 
 @media (max-width: 325px) {
     .carousel-wrapper {
