@@ -244,12 +244,12 @@ body {
 
     .cloth_photo222 { background: url("https://martinlopezramos.github.io/mikina22-1.webp"); background-repeat: no-repeat; background-size: contain;}
 
-    .cloth_photo333 { background: url("https://martinlopezramos.github.io/mikina32-1ddddddddddddddddddddddddddddddddd.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/kaaaaaaaaaaaaamo.jpg"); background-repeat: no-repeat; background-size: contain;}
 }
 
-/* @media (max-width: 695px) {
-    .cloth_photo333 { background: url("https://martinlopezramos.github.io/mikina32-1.webp"); background-repeat: no-repeat; background-size: contain;}
-} */
+@media (max-width: 695px) {
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/mikina32-1ddddddddddddddddddddddddddddddddd.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
 
 @media (max-width: 645px) {
     .hero_content {
