@@ -420,7 +420,7 @@ body {
 }
 
 @media (max-width: 420px) {
-    .cloth_photo1 { background: url("https://martinlopezramos.github.io/doko.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/lepsi.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/stred2.png"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/doko2.jpg"); background-repeat: no-repeat; background-size: contain;}
 
