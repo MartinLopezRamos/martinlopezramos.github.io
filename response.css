@@ -301,6 +301,8 @@ body {
     .sub_btn_footer form input {
         width: 20rem;
     } 
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/mozna.jpg"); background-repeat: no-repeat; background-size: contain;}
+
     .cloth_photo11 { background: url("https://martinlopezramos.github.io/longos.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo22 { background: url("https://martinlopezramos.github.io/gay3.webp"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo33 { background: url("https://martinlopezramos.github.io/gay4.webp"); background-repeat: no-repeat; background-size: contain;}
