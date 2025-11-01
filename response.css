@@ -439,7 +439,7 @@ body {
 }
 
 @media (max-width: 420px) {
-    .cloth_photo2 { background: url("https://martinlopezramos.github.io/str2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/snad.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred2.png"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/str.png"); background-repeat: no-repeat; background-size: contain;}
 
@@ -452,7 +452,7 @@ body {
 }
 
 @media (max-width: 350px) {
-    .cloth_photo2 { background: url("https://martinlopezramos.github.io/ddr2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/snad.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred3.png"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/ddr.png"); background-repeat: no-repeat; background-size: contain;}
 
