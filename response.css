@@ -439,14 +439,16 @@ body {
 }
 
 @media (max-width: 420px) {
-    .cloth_photo2 { background: url("https://martinlopezramos.github.io/lepsi.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/str2.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred2.png"); background-repeat: no-repeat; background-size: contain;}
-    .cloth_photo1 { background: url("https://martinlopezramos.github.io/doko2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/str.png"); background-repeat: no-repeat; background-size: contain;}
 
-    .cloth_photo11 { background: url("https://martinlopezramos.github.io/doko3.jpeg"); background-repeat: no-repeat; background-size: contain;}
-    .cloth_photo22 { background: url("https://martinlopezramos.github.io/doko4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/str3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/str4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/str5.jpeg"); background-repeat: no-repeat; background-size: contain;}
 
-    .cloth_photo111 { background: url("https://martinlopezramos.github.io/doko5.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/str6.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/str7.jpeg"); background-repeat: no-repeat; background-size: contain;}
 }
 
 @media (max-width: 350px) {
