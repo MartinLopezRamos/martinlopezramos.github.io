@@ -451,7 +451,7 @@ body {
     .cloth_photo222 { background: url("https://martinlopezramos.github.io/str7.jpeg"); background-repeat: no-repeat; background-size: contain;}
 }
 
-@media (max-width: 350px) {
+/* @media (max-width: 350px) {
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/doko.jpg"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred3.png"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/bobo2.jpg"); background-repeat: no-repeat; background-size: contain;}
@@ -461,7 +461,7 @@ body {
     .cloth_photo22 { background: url("https://martinlopezramos.github.io/bobo5.jpeg"); background-repeat: no-repeat; background-size: contain;}
 
     .cloth_photo111 { background: url("https://martinlopezramos.github.io/bobo6.jpg"); background-repeat: no-repeat; background-size: contain;}
-}
+} */
 
 @media (max-width: 325px) {
     .carousel-wrapper {
