@@ -171,7 +171,13 @@ body {
 
 }
 
-@media (max-width: 880px) {
+@media (max-width: 970px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/bruh3.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/bruh2.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/bruh1.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 900px) {
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/bimbik7.png"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/bimbik8.jpg"); background-repeat: no-repeat; background-size: contain;}
 
