@@ -242,9 +242,9 @@ body {
         width: 100%;
     }
 
-    .products h2 {
+    /* .products h2 {
         font-size: 32px;
-    }
+    } */
     .cloth_photo1 { background: url("https://martinlopezramos.github.io/short32-1.webp"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/short2-1.webp"); background-repeat: no-repeat; background-size: contain;}
     .cloth_photo3 { background: url("https://martinlopezramos.github.io/short22-1.webp"); background-repeat: no-repeat; background-size: contain;}
@@ -315,12 +315,15 @@ body {
         margin-top: 40px;
     }
 
-    .products h2 {
+    /* .products h2 {
         font-size: 28px;
-    }
+    } */
     .sub_btn_footer form input {
         width: 20rem;
-    } 
+    }
+    .about_photo img {
+        width: 90%;
+    }
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/mozna.jpg"); background-repeat: no-repeat; background-size: contain;}
 
     .cloth_photo33 { background: url("https://martinlopezramos.github.io/longos.jpg"); background-repeat: no-repeat; background-size: contain;}
@@ -432,9 +435,9 @@ body {
         width: 200px;
     }
 
-    .products h2 {
+    /* .products h2 {
         font-size: 24px;
-    }
+    } */
     .sub_btn_footer form p {
         width: 14rem;
         text-align: center;
@@ -520,9 +523,9 @@ body {
         margin-top: 50px;
     }
 
-    .products h2 {
+    /* .products h2 {
         font-size: 20px;
-    }
+    } */
     .sub_btn_footer form input {
         width: 14rem;
     }

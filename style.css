@@ -279,7 +279,7 @@ nav li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  /* height: 70vh; */
   padding: 0 40px;
 }
 
