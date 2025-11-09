@@ -107,7 +107,16 @@ body {
     }
 }
 
+@media (max-width: 1130px) {
+    .about_photo img {
+        width: 90%;
+    }
+}
+
 @media (max-width: 1024px) {
+    .about_photo img {
+        width: 80%;
+    }
     .about_text h1 {
         text-align: center;
     }
