@@ -172,6 +172,7 @@ body {
 
     .about {
         flex-direction: column;
+        margin-top: -100px;
     }
 
     .about_photo {
