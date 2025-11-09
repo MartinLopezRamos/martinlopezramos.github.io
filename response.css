@@ -387,6 +387,9 @@ body {
         width: 17rem;
         margin-bottom: 0.5rem;
     }
+    .about_photo img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 475px) {
