@@ -546,3 +546,540 @@ body {
         padding: 12px 82px;
     }
 }
+
+
+/* body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 2200px) {
+    .sub_btn_footer {
+        gap: 50rem;
+    }
+}
+
+
+
+@media (max-width: 2060px) {
+    .sub_btn_footer {
+        gap: 40rem;
+    }
+}
+
+@media (max-width: 1920px) {
+    .sub_btn_footer {
+        gap: 20rem;
+    }
+}
+
+@media (max-width: 1600px) {
+    .sub_btn_footer {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sub_btn_footer {
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 1340px) {
+    .text {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .sub_btn_footer {
+        gap: 0.5rem;
+    }
+    .text {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 100%;
+    }
+
+    nav ul > .links {
+        position: absolute;
+        left:0; bottom:0;
+        transform: translateY(100%);
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        transition: all ease-in-out .3s;
+    }
+
+    nav ul > .links > div {
+        padding: 40px 20px;
+        flex-direction: column;
+        background-color: #f5f5f5e1;
+        backdrop-filter: blur(10px);
+    }
+
+    nav ul > .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    nav ul a:focus {
+        color: #000000;
+    }
+
+    nav ul a:hover {
+        padding: none;
+        border: none;
+        background: none;
+    }
+} 
+
+
+@media (max-width: 1500px) {
+    
+    .photos_items {
+        width: 90%;
+    }
+
+    .item {
+        height: 550px;
+        width: 300px;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 1130px) {
+    .about_photo img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about_photo img {
+        width: 80%;
+    }
+    .about_text h1 {
+        text-align: center;
+    }
+    .about_text p {
+        text-align: center;
+    }
+    .about_text {
+        width: 100%;
+    }
+    .hero_content {
+        height: 80vh;
+        width: 90%;
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_content p {
+        font-size: 60px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero_content a {
+        font-size: 35px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #typewriter-container {
+        font-size: 35px;
+        height: 20vh;
+    }
+
+    .photos_items {
+        gap: 5px;
+        align-self: center;
+        width: 90%;
+    }
+
+    .item {
+        height: 400px;
+        width: 300px;
+    }
+
+    .products h2 {
+        font-size: 40px;
+    }
+
+    .about {
+        flex-direction: column;
+        margin-top: -100px;
+    }
+
+    .about_photo {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 970px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/bruh3.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/bruh2.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/bruh1.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 900px) {
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/bimbik7.png"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/bimbik8.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/bimbik3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/bimbik4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/bimbik5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/bimbik2.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/bimbik.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 840px) {
+    .hero_content {
+        height: 80vh;
+        width: 90%;
+        margin-top: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero_content p {
+        font-size: 50px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero_content a {
+        font-size: 30px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #typewriter-container {
+        font-size: 30px;
+    }
+
+    .photos_items {
+        gap: 20px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .item {
+        height: 400px;
+        width: 300px;
+    }
+
+    .accessories_others {
+        align-items: center;
+        margin: 0;
+    }
+
+    .accessories_others p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/short32-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/short2-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/short22-1.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/long22-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/long32-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/long2-1.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/mikina2-1.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/mikina22-1.webp"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 750px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/nene.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/ano.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/kezby.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/kaaaaaaaaaaaaamo.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 695px) {
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/mikina32-1ddddddddddddddddddddddddddddddddd.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 645px) {
+    .hero_content {
+        height: 80vh;
+        width: 90%;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_content p {
+        font-size: 45px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero_content a {
+        font-size: 25px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #typewriter-container {
+        font-size: 25px;
+    }
+
+    .photos_items {
+        gap: 10px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .item {
+        height: 350px;
+        width: 250px;
+    }
+
+    .products {
+        margin-top: 40px;
+    }
+
+    .sub_btn_footer form input {
+        width: 20rem;
+    }
+    .about_photo img {
+        width: 90%;
+    }
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/mozna.jpg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/longos.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/gay3.webp"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/gay4.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/gay6.webp"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 600px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/mas.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 560px) {
+    .sub_btn_footer form input {
+        width: 17rem;
+    }
+    .sub_btn_footer form p {
+        font-size: 15px;
+    }
+    .acc_photo2 { background: url("https://martinlopezramos.github.io/about2NE.webp"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/test2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/2.png"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/test.png"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/test5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/test3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/test4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/test6.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/test7.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/gay7.webp"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 510px) {
+    .sub_btn_footer {
+        height: 11rem;
+    }
+    .sub_btn_footer form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .sub_about {
+        display: block;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+    }
+    .sub_btn_footer form button {
+        padding: 12px 106px;
+    }
+    .sub_btn_footer {
+        height: 12rem;
+    }
+    .sub_btn_footer form input {
+        width: 17rem;
+        margin-bottom: 0.5rem;
+    }
+    .about_photo img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 475px) {
+    .product_card {
+        display: flex;
+    }
+    .carousel-wrapper {
+        width: 17.5rem;
+    }
+    .hero_content {
+        height: 80vh;
+        width: 90%;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_content P {
+        font-size: 40px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero_content a {
+        font-size: 20px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #typewriter-container {
+        font-size: 20px;
+    }
+
+    .photos_items {
+        gap: 10px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+    .item {
+        height: 300px;
+        width: 200px;
+    }
+
+    .sub_btn_footer form p {
+        width: 14rem;
+        text-align: center;
+    }
+    .sub_btn_footer {
+        height: 13rem;
+    }
+    .about_photo img {
+        width: 120%;
+    }
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/brozu2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred.png"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/brozu.png"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/brozu3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/brozu4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/brozu5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/brozu6.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/brozu7.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo333 { background: url("https://martinlopezramos.github.io/lepsi7.jpg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 420px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/snad2.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred2.png"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/str.png"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/str3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/str4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/str5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/str6.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/str7.jpeg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 350px) {
+    .cloth_photo2 { background: url("https://martinlopezramos.github.io/snad.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo3 { background: url("https://martinlopezramos.github.io/stred3.png"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo1 { background: url("https://martinlopezramos.github.io/ddr.png"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo33 { background: url("https://martinlopezramos.github.io/ddr5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo11 { background: url("https://martinlopezramos.github.io/ddr3.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo22 { background: url("https://martinlopezramos.github.io/ddr4.jpeg"); background-repeat: no-repeat; background-size: contain;}
+
+    .cloth_photo111 { background: url("https://martinlopezramos.github.io/ddr6.jpeg"); background-repeat: no-repeat; background-size: contain;}
+    .cloth_photo222 { background: url("https://martinlopezramos.github.io/ddr7.jpeg"); background-repeat: no-repeat; background-size: contain;}
+}
+
+@media (max-width: 325px) {
+    .carousel-wrapper {
+        width: 15rem;
+    }
+    .hero_content {
+        height: 80vh;
+        width: 90%;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero_content p {
+        font-size: 30px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .hero_content a {
+        font-size: 15px;
+        align-self: center;
+        background-color: #0000007e;
+        padding: 10px;
+        margin: 0;
+    }
+
+    #typewriter-container {
+        font-size: 15px;
+    }
+
+    .products {
+        margin-top: 50px;
+    }
+
+    .sub_btn_footer form input {
+        width: 14rem;
+    }
+    .sub_btn_footer form button {
+        padding: 12px 82px;
+    }
+} */

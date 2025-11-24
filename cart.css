@@ -1,4 +1,382 @@
 html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 250px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+      font-family: "Courier Prime", monospace;
+      overflow-x: hidden;
+      z-index: 998;
+      user-select: none;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      height: 70px;
+      z-index: 999;
+      background-color: #f5f5f5; 
+      transition: background-color 0.3s ease;   
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      list-style: none;
+      width: 100%;
+      padding: 10px 20px;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    nav ul > .links > div {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      list-style: none;
+    }
+
+    nav ul > .hamburger {
+      flex-direction: column;
+      gap: 4px;
+      width: 30px;
+      align-items: center;
+      display: none;
+      position: relative;
+    }
+
+    nav ul > .hamburger > span {
+      height: 2px;
+      width: 100%;
+      background-color: #000;
+      border-radius: 1px;
+      transition: all .45s ease;
+    }
+
+    nav ul > .hamburger:has(input:checked) > span:first-child {
+      transform: translateY(6px) rotate(135deg);
+    }
+
+    nav ul > .hamburger:has(input:checked) > span:nth-child(2) {
+      width: 0px;
+      opacity: 0;
+    }
+
+    nav ul > .hamburger:has(input:checked) > span:nth-child(3) {
+      transform: translateY(-6px) rotate(-135deg);
+      opacity: 0.8;
+    }
+
+    nav ul > .hamburger > input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+    }
+
+    .hamburger:has(input:checked) ~ .links {
+      max-height: 100vh;
+    }
+
+    nav li a {
+      color: #1d1d1d;
+      font-size: 1rem;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
+    }
+
+    nav li a:hover {
+      color: #222;
+      transition: 0.3s ease-in-out;
+    }
+
+    .logo_nav img {
+      width: 45px;
+      height: 45px;
+      opacity: 0.9;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.24));
+    }
+
+    .logo_nav img:hover {
+      opacity: 1;
+      transition: 0.5s ease;
+      filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.484));
+      scale: 1.02;
+    }
+
+    .nav_instagram a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .nav_instagram a:hover {
+      background-color: #222;
+      color: #fff;
+      transition: 0.3s ease-in-out;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      min-height: 100vh;
+      width: 100%;
+      padding: 0 5%; 
+      box-sizing: border-box; 
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      padding: 30px;
+      background-color: #e1e1e1;
+      height: fit-content;
+      margin-bottom: 120px;
+    }
+
+    .summary h1 {
+      font-family: "rubik", sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .kosik_items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 50px;
+      margin-left: 20px;
+    }
+
+    .remove-item {
+      cursor: pointer;
+      background: transparent;
+      border: none;
+    }
+
+    .remove-item img {
+      width: 22px;
+      height: 22px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .remove-item img:hover {
+      animation-name: shake;
+      animation-duration: 1s;
+    }
+
+    @keyframes shake {
+      0% { rotate: 0deg; } 
+      25% { rotate: -10deg; }
+      50% { rotate: 10deg; }
+      75% { rotate: -10deg; }
+      100% { rotate: 0deg; }
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #a5a5a5;
+    }
+
+    .clear-cart-btn {
+      background-color: #000;
+      color: white;
+      border: none;
+      padding: 10px;
+      font: "rubik", sans-serif;
+      margin: 20px 0 20px 0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .clear-cart-btn:hover {
+      background-color: #222;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      padding: 15px 10px 15px 10px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      padding: 30px;
+      gap: 1rem;
+    }
+
+    .info_info {
+      background-color: #a5a5a5;
+      width: fit-content;
+      height: fit-content;
+      margin: 0;
+      padding: 10px 10px 5px 10px;
+    }
+
+    .info_info:hover {
+      cursor: pointer;
+    }
+
+    .info_actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .info_ig {
+      background-color: #a5a5a5;
+      padding: 10px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+    }
+
+    .info_ig a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .popup {
+      display: none; 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .popup-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      min-width: 300px;
+      max-width: 400px;
+      text-align: center;
+      position: relative;
+    }
+
+    .popup-content h3 {
+      font-family: "rubik", sans-serif;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+
+    .free-stickers-notice {
+      background-color: #101010;
+      color: white;
+      padding: 15px;
+      margin: 20px 0;
+      display: none;
+      font-family: 'rubik', sans-serif;
+    }
+
+    .free-stickers-notice strong {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-family: 'rubik', sans-serif;
+    }
+
+    .free-stickers-notice p {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+      font-family: 'rubik', sans-serif;
+      font-weight: 300;
+    }
+
+    .empty-cart {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .empty-cart p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;             
+      height: 12px;  
+      margin: 0;
+      padding: 0;           
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #000;   
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #555;
+    }
+
+    @media (max-width: 1020px) {
+      .content {
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        text-align: center;
+      }
+      .kosik_items {
+        margin: 0;
+        text-align: center;
+      }
+      .info {
+        margin: 0;
+        text-align: center;
+      }
+      .summary {
+        margin: 0;
+        text-align: center;
+        margin-top: 4rem;
+      }
+      .info_actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .info_info {
+        padding: 6px 110px 1px 110px;
+      }
+      .info_ig {
+        width: 14rem;
+      }
+    }
+
+/* html {
     scroll-behavior: smooth;
     scroll-padding-top: 250px;
 }
@@ -338,4 +716,4 @@ nav li a:hover {
   .info_ig {
     width: 14rem;
   }
-}
+} */
