@@ -958,12 +958,12 @@ footer {
     width: 100%;
   }
 
-  .about_text h1,
+  /* .about_text h1,
   .products h2 {
     font-size: 24px;
     text-align: center;
     word-break: break-word;
-  }
+  } */
 
   .about_text p {
     width: 90%;
@@ -971,7 +971,15 @@ footer {
   }
 
   .products h2 {
-    margin-bottom: 37px; /* zmenšeno z 120px */
+    margin-bottom: 37px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .about_text h1 {
+    font-size: 37px;
+    text-align: center;
+    word-break: break-word;
   }
 
   /* .product_card {
