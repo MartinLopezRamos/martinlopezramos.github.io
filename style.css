@@ -344,7 +344,7 @@ nav li a:hover {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
@@ -958,7 +958,7 @@ footer {
     width: 100%;
   }
 
-  .about_text h2,
+  .about_text h1,
   .products h2 {
     font-size: 24px;
     text-align: center;
