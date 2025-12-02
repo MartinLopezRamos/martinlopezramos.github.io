@@ -201,6 +201,10 @@ body {
 
 @media (max-width: 840px) {
     .product_card {
+        gap: 40px;
+    }
+
+    .product_card {
         margin-bottom: 100px;
     }
     .hero_content {
