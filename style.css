@@ -1188,21 +1188,25 @@ nav ul > .hamburger > span {
 }
 
 nav ul > .hamburger:has(input:checked) > span:first-child {
-  rotate: 600deg;
-}
+    transform: translateY(6px) rotate(135deg);
+  }
 
 nav ul > .hamburger:has(input:checked) > span:nth-child(2) {
     width: 0px;
     opacity: 0;
-}
+  }
 
 nav ul > .hamburger:has(input:checked) > span:nth-child(3) {
-    transform: translateY(-6px);
-}
+    transform: translateY(-6px) rotate(-135deg);
+    opacity: 0.8;
+  }
 
 nav ul > .hamburger > input {
     position: absolute;
-    top:0;left:0;height: 100%;width: 100%;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
 }
 
