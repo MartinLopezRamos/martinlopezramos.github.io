@@ -201,10 +201,6 @@ body {
 
 @media (max-width: 840px) {
     .product_card {
-        gap: 40px;
-    }
-
-    .product_card {
         margin-bottom: 100px;
     }
     .hero_content {
@@ -352,6 +348,9 @@ body {
 
 @media (max-width: 600px) {
     .cloth_photo2 { background: url("https://martinlopezramos.github.io/mas.jpg"); background-repeat: no-repeat; background-size: contain;}
+    .product_card {
+        gap: 40px;
+    }
 }
 
 @media (max-width: 560px) {
