@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const prices = {
         "Belt": {
-          CM: 799
+          "120 cm": 799
         },
         "Summer’24 tee": {
           S: 599,
@@ -546,7 +546,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const prices = {
           "Belt": {
-            CM: 799
+            "120 cm": 799
           },
           "Summer’24 tee": {
             S: 599,
