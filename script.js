@@ -350,7 +350,9 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       const prices = {
-        "Belt": 799,
+        "Belt": {
+          CM: 799
+        },
         "Summer’24 tee": {
           S: 599,
           M: 599,
@@ -543,7 +545,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const prices = {
-          "Belt": 799,
+          "Belt": {
+            CM: 799
+          },
           "Summer’24 tee": {
             S: 599,
             M: 599,
