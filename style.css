@@ -558,16 +558,16 @@ nav li a:hover {
   background-position: center;
 }
 
-.cloth_photo1 { background: url("https://martinlopezramos.github.io/gaga1.png"); background-repeat: no-repeat; background-size: contain;}
-.cloth_photo2 { background: url("https://martinlopezramos.github.io/gaga2.jpg"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo1 { background: url("https://martinlopezramos.github.io/cloth_photo1.webp"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo2 { background: url("https://martinlopezramos.github.io/cloth_photo2.webp"); background-repeat: no-repeat; background-size: contain;}
 .cloth_photo3 { background: url("https://martinlopezramos.github.io/short22-1.webp"); background-repeat: no-repeat; background-size: contain;}
 
-.cloth_photo11 { background: url("https://martinlopezramos.github.io/gaga3.jpeg"); background-repeat: no-repeat; background-size: contain;}
-.cloth_photo22 { background: url("https://martinlopezramos.github.io/gaga4.jpeg"); background-repeat: no-repeat; background-size: contain;}
-.cloth_photo33 { background: url("https://martinlopezramos.github.io/gaga5.jpeg"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo11 { background: url("https://martinlopezramos.github.io/cloth_photo11.webp"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo22 { background: url("https://martinlopezramos.github.io/cloth_photo22.webp"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo33 { background: url("https://martinlopezramos.github.io/cloth_photo33.webp"); background-repeat: no-repeat; background-size: contain;}
 
-.cloth_photo111 { background: url("https://martinlopezramos.github.io/gaga6.jpeg"); background-repeat: no-repeat; background-size: contain;}
-.cloth_photo222 { background: url("https://martinlopezramos.github.io/gaga7.jpg"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo111 { background: url("https://martinlopezramos.github.io/cloth_photo111.webp"); background-repeat: no-repeat; background-size: contain;}
+.cloth_photo222 { background: url("https://martinlopezramos.github.io/cloth_photo222.webp"); background-repeat: no-repeat; background-size: contain;}
 .cloth_photo333 { background: url("https://martinlopezramos.github.io/mikina32-1.webp"); background-repeat: no-repeat; background-size: contain;}
 
 .cloth-carousel-btn {
