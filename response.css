@@ -3,35 +3,35 @@ body {
 }
 
 @media (max-width: 2200px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 50rem;
-    }
+    } */
 }
 
 
 
 @media (max-width: 2060px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 40rem;
-    }
+    } */
 }
 
 @media (max-width: 1920px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 20rem;
-    }
+    } */
 }
 
 @media (max-width: 1600px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 10rem;
-    }
+    } */
 }
 
 @media (max-width: 1440px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 5rem;
-    }
+    } */
 }
 
 @media (max-width: 1340px) {

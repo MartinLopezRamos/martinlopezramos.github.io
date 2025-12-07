@@ -870,7 +870,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 75rem;
+  /* gap: 75rem; */
 }
 
 .sub_btn_footer a {
@@ -878,7 +878,9 @@ footer {
 }
 
 .text {
+  margin-right: auto;
   font-size: 17px;
+  margin-left: 50px;
 }
 
 .sub_btn_footer form {
@@ -886,6 +888,7 @@ footer {
   display: grid;
   grid-template-columns: auto auto;
   column-gap: 0.6rem;
+  margin-right: 50px;
 }
 
 .sub_btn_footer form p {
