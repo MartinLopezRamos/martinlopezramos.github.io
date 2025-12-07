@@ -26,6 +26,10 @@ body {
     /* .sub_btn_footer {
         gap: 10rem;
     } */
+    .item {
+        height: 600px;
+        width: 400px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -41,8 +45,11 @@ body {
 }
 
 @media (max-width: 1100px) {
-    .sub_btn_footer {
+    /* .sub_btn_footer {
         gap: 0.5rem;
+    } */
+    .sub_btn_footer form {
+        margin-right: 0;
     }
     .text {
         display: none;
