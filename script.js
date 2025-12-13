@@ -354,6 +354,7 @@ document.addEventListener('DOMContentLoaded', () => {
           "120 cm": 799
         },
         "Summer’24 tee": {
+          XS: 599,
           S: 599,
           M: 599,
           L: 599,
@@ -361,6 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
           XXL: 599
         },
         "Greyhound Longsleeve": {
+          XS: 949,
           S: 949,
           M: 949,
           L: 949,
@@ -368,6 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
           XXL: 949
         },
         "Crewneck": {
+          XS: 1499,
           S: 1499,
           M: 1499,
           L: 1499,
@@ -555,6 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "120 cm": 799
           },
           "Summer’24 tee": {
+            XS: 599,
             S: 599,
             M: 599,
             L: 599,
@@ -562,6 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
             XXL: 599
           },
           "Greyhound Longsleeve": {
+            XS: 949,
             S: 949,
             M: 949,
             L: 949,
@@ -569,6 +574,7 @@ document.addEventListener('DOMContentLoaded', () => {
             XXL: 949
           },
           "Crewneck": {
+            XS: 1499,
             S: 1499,
             M: 1499,
             L: 1499,
