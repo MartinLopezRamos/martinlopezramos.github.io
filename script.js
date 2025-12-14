@@ -358,24 +358,21 @@ document.addEventListener('DOMContentLoaded', () => {
           S: 599,
           M: 599,
           L: 599,
-          XL: 599,
-          XXL: 599
+          XL: 599
         },
         "Greyhound Longsleeve": {
           XS: 949,
           S: 949,
           M: 949,
           L: 949,
-          XL: 949,
-          XXL: 949
+          XL: 949
         },
         "Crewneck": {
           XS: 1499,
           S: 1499,
           M: 1499,
           L: 1499,
-          XL: 1499,
-          XXL: 1499
+          XL: 1499
         }
       };
 
@@ -562,24 +559,21 @@ document.addEventListener('DOMContentLoaded', () => {
             S: 599,
             M: 599,
             L: 599,
-            XL: 599,
-            XXL: 599
+            XL: 599
           },
           "Greyhound Longsleeve": {
             XS: 949,
             S: 949,
             M: 949,
             L: 949,
-            XL: 949,
-            XXL: 949
+            XL: 949
           },
           "Crewneck": {
             XS: 1499,
             S: 1499,
             M: 1499,
             L: 1499,
-            XL: 1499,
-            XXL: 1499
+            XL: 1499
           }
         };
 
