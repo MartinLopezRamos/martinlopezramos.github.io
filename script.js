@@ -373,6 +373,13 @@ document.addEventListener('DOMContentLoaded', () => {
           M: 1499,
           L: 1499,
           XL: 1499
+        },
+        "Hoodie": {
+          XS: 1599,
+          S: 1599,
+          M: 1599,
+          L: 1599,
+          XL: 1599
         }
       };
 
@@ -574,6 +581,13 @@ document.addEventListener('DOMContentLoaded', () => {
             M: 1499,
             L: 1499,
             XL: 1499
+          },
+          "Hoodie": {
+            XS: 1599,
+            S: 1599,
+            M: 1599,
+            L: 1599,
+            XL: 1599
           }
         };
 
